@@ -1,11 +1,16 @@
 import Featured from "../Featured/Featured";
 import FoodCategory from "../FoodCategory/FoodCategory";
 import PopularMenu from "../PopularMenu/PopularMenu";
+import SetTitle from "../Shared/SetTitle/SetTitle";
+import Testimonials from "../Testimonials/Testimonials";
 import Banner from "./Banner";
 
 const Home = () => {
     return (
         <div>
+            <div>
+                <SetTitle title={'Home'}></SetTitle>
+            </div>
             <div>
                 <Banner></Banner>
             </div>
@@ -20,6 +25,10 @@ const Home = () => {
 
             <div>
                 <Featured></Featured>
+            </div>
+
+            <div>
+                <Testimonials></Testimonials>
             </div>
         </div>
     );

@@ -1,14 +1,20 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
 
     const listItems = <>
-        <NavLink to={'/'}>
-            <li>Home</li>
-        </NavLink>
-        <NavLink to={'/about'}>
-            <li>About</li>
-        </NavLink>
+        <li>
+            <Link to={'/'} className={({ isActive, isPending }) =>
+                isActive
+                    ? "bg-yellow-400 underline"
+                    : isPending
+                        ? "pending"
+                        : ""
+            }>Home</Link>
+        </li>
+        <li>
+            <Link to={'/menu'}> Our Menu</Link>
+        </li>
     </>
 
     return (

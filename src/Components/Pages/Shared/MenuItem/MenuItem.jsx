@@ -18,7 +18,7 @@ const MenuItem = ({ item }) => {
                     <p>{recipe}</p>
                 </div>
                 <div>
-                    <p className="text-yellow-500 font-semibold">{price}</p>
+                    <p className="text-yellow-500 font-semibold">${price}</p>
                 </div>
 
             </div>
