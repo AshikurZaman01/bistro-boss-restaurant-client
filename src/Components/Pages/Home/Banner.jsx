@@ -12,7 +12,7 @@ import img6 from "../../../assets/assets/home/06.png";
 const Banner = () => {
     return (
         <div>
-            <Carousel axis="horizontal">
+            <Carousel axis="horizontal" autoPlay infiniteLoop autoFocus >
                 <div>
                     <img src={img1} />
                 </div>

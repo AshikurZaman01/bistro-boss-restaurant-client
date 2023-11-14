@@ -1,3 +1,4 @@
+import FoodCategory from "../FoodCategory/FoodCategory";
 import Banner from "./Banner";
 
 const Home = () => {
@@ -5,6 +6,9 @@ const Home = () => {
         <div>
             <div>
                 <Banner></Banner>
+            </div>
+            <div className="my-6">
+                <FoodCategory></FoodCategory>
             </div>
         </div>
     );
